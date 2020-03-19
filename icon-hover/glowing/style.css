@@ -16,20 +16,21 @@ ul li {
   list-style: none;
   margin: 0 15px;
 }
-ul li a {
+ul li {
   position: relative;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   text-align: center;
-  line-height: 60px;
+  line-height: 120px;
   background-color: #333;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 50px;
   color: #666;
   transition: .5s;
+  cursor: pointer;
 }
-ul li a::before {
+ul li::before {
   content: '';
   position: absolute;
   top: 0;
@@ -42,11 +43,11 @@ ul li a::before {
   transform: scale(.9);
   z-index: -1;
 }
-ul li a:hover::before {
+ul li:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #ffee10;
 }
-ul li a:hover {
+ul li:hover {
   color: #ffee10;
   box-shadow: 0 0 15px #ffee10;
   text-shadow: 0 0 5px #ffee10;
