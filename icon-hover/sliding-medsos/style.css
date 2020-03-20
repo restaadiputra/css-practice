@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+}
+ul li a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: width 0.5s;
+}
+ul li:hover a {
+  width: 160px;
+}
+ul li a .fa {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+  border-right: 2px solid #fff;
+  font-size: 20px;
+}
+ul li a span {
+  color: #fff;
+  padding: 0 10px;
+}
+ul li:nth-child(1) a {
+  background-color: #1877f2;
+}
+ul li:nth-child(2) a {
+  background-color: #1da1f2;
+}
+ul li:nth-child(3) a {
+  background-color: #c32aa3;
+}
+ul li:nth-child(4) a {
+  background-color: #007bb5;
+}
